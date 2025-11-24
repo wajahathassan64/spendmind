@@ -159,11 +159,14 @@
             <h2>2. Description of Service</h2>
             <p>SpendMind is a voice-powered expense tracking application that allows users to:</p>
             <ul>
-                <li>Record expenses using voice input</li>
-                <li>Track and categorize expenses</li>
-                <li>View expense history and analytics</li>
-                <li>Export expense data</li>
-                <li>Optionally sync data across devices using iCloud</li>
+                <li>Record expenses using voice input with multi-language support (English, Roman Urdu, Urdu)</li>
+                <li>Track and categorize expenses with custom categories and tags</li>
+                <li>View expense history, search, filter, and view analytics</li>
+                <li>Export expense data in encrypted backup format</li>
+                <li>Import expense data from encrypted backup files</li>
+                <li>Upload and sync data to your private iCloud account (optional)</li>
+                <li>Access your expense data across multiple devices when iCloud sync is enabled</li>
+                <li>View expense summaries via iOS widget extension</li>
             </ul>
             <p>We reserve the right to modify, suspend, or discontinue any aspect of the App at any time without notice.</p>
         </section>
@@ -203,6 +206,7 @@
                 <li>Remove, alter, or obscure any proprietary notices</li>
                 <li>Use automated systems to access the App without permission</li>
                 <li>Transmit any viruses, malware, or harmful code</li>
+                <li>Import malicious, corrupted, or incompatible data files</li>
                 <li>Use the App to violate any third-party rights</li>
             </ul>
         </section>
@@ -223,13 +227,45 @@
             <h3>5.3 Data Processing</h3>
             <p>Your User Content may be processed by third-party services as described in our Privacy Policy, including:</p>
             <ul>
-                <li>Apple's Speech Recognition framework (local processing)</li>
-                <li>OpenAI's API (for expense extraction from transcripts)</li>
-                <li>Apple's CloudKit (if you enable iCloud sync)</li>
+                <li>Apple's Speech Recognition framework (local processing on your device)</li>
+                <li>OpenAI's API (for expense extraction from voice transcripts)</li>
+                <li>Apple's CloudKit (if you enable iCloud sync - your data is stored in your private iCloud account, accessible only through your Apple ID)</li>
             </ul>
+            <div class="highlight">
+                <strong>Important:</strong> When you enable iCloud sync, your expense data is uploaded to and stored in your private iCloud account. We do not have access to your iCloud data. Your data is encrypted and protected by Apple's security measures.
+            </div>
             
-            <h3>5.4 Data Backup and Export</h3>
-            <p>You are responsible for backing up your data. The App provides export functionality, but we are not responsible for data loss. We recommend regularly exporting your data.</p>
+            <h3>5.4 Data Backup, Export, and iCloud Storage</h3>
+            <p>You are responsible for backing up your data. The App provides the following options:</p>
+            <ul>
+                <li><strong>iCloud Sync:</strong> If you enable iCloud sync, your expense data will be uploaded to your private iCloud account. Your data is stored securely in your personal iCloud storage and is accessible only through your Apple ID. We do not have access to your iCloud data. This allows you to access your expense data across multiple devices.</li>
+                <li><strong>Export:</strong> You can export your data in encrypted backup format (.aeb files) for additional backup purposes or to transfer data between devices.</li>
+            </ul>
+            <p>We are not responsible for data loss. We recommend enabling iCloud sync or regularly exporting your data.</p>
+            
+            <h3>5.5 Data Import</h3>
+            <p>The App allows you to import expense data from encrypted backup files (.aeb format) that were previously exported from the App.</p>
+            <ul>
+                <li>You are solely responsible for the accuracy and validity of imported data</li>
+                <li>Importing corrupted, incompatible, or malicious backup files may result in data loss or app malfunction</li>
+                <li>We are not responsible for any issues arising from importing backup files</li>
+                <li>You should verify imported data for accuracy after import</li>
+                <li>We recommend backing up your current data before importing</li>
+            </ul>
+            <div class="warning">
+                <strong>Warning:</strong> Only import backup files that you have created yourself or trust completely. Importing files from untrusted sources may compromise your data security.
+            </div>
+            
+            <h3>5.6 Widget Extension</h3>
+            <p>The App includes an iOS widget extension that displays expense summaries on your device's home screen.</p>
+            <ul>
+                <li>The widget displays a summary of your expense data for quick reference</li>
+                <li>Widget content is based on data stored locally on your device or synced via iCloud</li>
+                <li>Widget updates may not be instantaneous and may reflect cached data</li>
+                <li>You are responsible for ensuring the widget displays accurate information</li>
+                <li>Widget functionality is subject to iOS limitations and may vary by device</li>
+            </ul>
+            <p>We are not responsible for any inaccuracies in widget displays or widget-related issues.</p>
         </section>
         
         <section>
@@ -253,12 +289,12 @@
             <h2>7. Third-Party Services</h2>
             <p>The App integrates with third-party services, including:</p>
             <ul>
-                <li><strong>Apple Services:</strong> Speech Recognition, CloudKit/iCloud, App Store</li>
-                <li><strong>OpenAI:</strong> API services for expense extraction</li>
+                <li><strong>Apple Services:</strong> Speech Recognition (local processing), CloudKit/iCloud (for data sync to your private iCloud account), App Store, iOS Widget framework</li>
+                <li><strong>OpenAI:</strong> API services for expense extraction from voice transcripts</li>
             </ul>
             <p>Your use of these third-party services is subject to their respective terms and conditions. We are not responsible for the availability, accuracy, or practices of third-party services.</p>
             <div class="highlight">
-                <strong>Important:</strong> We do not control third-party services and are not liable for any issues arising from their use.
+                <strong>Important:</strong> We do not control third-party services and are not liable for any issues arising from their use. When you use iCloud sync, your data is stored in your private iCloud account managed by Apple, not by us.
             </div>
         </section>
         
@@ -276,11 +312,13 @@
             <h3>8.2 Accuracy Disclaimer</h3>
             <p>While we strive for accuracy, we do not guarantee that:</p>
             <ul>
-                <li>Expense extraction from voice input will be 100% accurate</li>
-                <li>All expenses will be correctly categorized</li>
-                <li>Data synchronization will be instantaneous or error-free</li>
+                <li>Expense extraction from voice input will be 100% accurate, especially for non-English languages or complex expressions</li>
+                <li>All expenses will be correctly categorized or tagged</li>
+                <li>iCloud data synchronization will be instantaneous or error-free</li>
+                <li>Widget displays will always reflect the most current data</li>
+                <li>Multi-language speech recognition will work perfectly in all supported languages</li>
             </ul>
-            <p>You are responsible for reviewing and verifying the accuracy of your expense data.</p>
+            <p>You are responsible for reviewing and verifying the accuracy of your expense data, categories, and all imported information.</p>
             
             <h3>8.3 Limitation of Liability</h3>
             <p>To the maximum extent permitted by law, we shall not be liable for:</p>
@@ -291,7 +329,7 @@
                 <li>Data loss or corruption</li>
                 <li>Interruption of service</li>
             </ul>
-            <p>Our total liability shall not exceed the amount you paid for the App (if any) or $10, whichever is greater.</p>
+            <p>Our total liability shall not exceed the amount you paid for the App (if any). If the App is provided free of charge, our liability is limited to the maximum extent permitted by applicable law.</p>
             
             <div class="warning">
                 <strong>Important:</strong> Some jurisdictions do not allow the exclusion of certain warranties or limitations of liability, so some of the above may not apply to you.
